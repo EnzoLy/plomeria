@@ -1,13 +1,18 @@
+import Link from 'next/link'
+import { useContext } from 'react'
+import ContactContext from '../../../contexts/ContactContext'
 import styles from './styles.module.css'
 
 export default function Contact () {
+  const value = useContext(ContactContext)
+
   return (
     <div className={styles.contact} id='contact'>
       <div className={styles.info}>
         <div>
           <h2>LLamanos a: </h2>
-          <span>320 548 19 92</span>
-          <span>321 610 69 51</span>
+          <a href='tel:320-548-19-92'>320 548 19 92</a>
+          <a href='tel:321-610-69-51'>321 610 69 51</a>
         </div>
         <div>
           <h2>Visitanos en: </h2>
@@ -19,7 +24,9 @@ export default function Contact () {
         </div>
         <div>
           <h2>Escribenos a: </h2>
-          <span>todoenplomeria24horas@gmail.com</span>
+          <Link href='/contact'>
+            <span onClick={() => { value.setContact('email') }}>todoenplomeria24horas@gmail.com</span>
+          </Link>
         </div>
       </div>
 

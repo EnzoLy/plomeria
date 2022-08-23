@@ -25,6 +25,10 @@
 	flex-direction: column;
 }
 
+.info div span {
+	cursor: pointer;
+}
+
 .map {
 	width: 300px;
 	height: 300px;

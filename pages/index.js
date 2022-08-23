@@ -6,30 +6,29 @@ import Footer from '../components/footer/Footer'
 import { AboutUs } from '../components/home/aboutus/AboutUs'
 import Contact from '../components/home/contact/Contact'
 import { Services } from '../components/home/services/Services'
+import { useEffect, useState } from 'react'
+import { ContactIcon } from '../components/Icons/Icons'
 
 export default function Index () {
-  // if (typeof window !== 'undefined') { // The code inside brackets will be executed ONLY in browser
-  //   const observer = new IntersectionObserver(entries => {
-  //     // Loop over the entries
-  //     entries.forEach(entry => {
-  //       // If the element is visible
-  //       if (entry.isIntersecting && !entry.target.classList.contains('styles_slide_top__ehyTe')) {
-  //         // Add the animation class
-  //         entry.target.classList.add('styles_slide_top__ehyTe')
-  //         console.log(entry.target)
-  //         console.log('added')
-  //       }
-  //     })
-  //   })
+  const [isMobile, setIsMobile] = useState(false)
 
-  //   observer.observe(document.getElementById('article'))
-  // }
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsMobile(window.innerWidth < 768)
+    }
+  })
 
   return (
     <>
       <div className={styles.whatsapp}>
         <Image src='/imgs/whatsapp.png' width='70px' height='70px' alt='whatsapp_img' />
       </div>
+
+      {isMobile && (
+        <div className={styles.call}>
+          <a href='tel:320-548-19-92'><ContactIcon width='40' height='40' /></a>
+        </div>
+      )}
 
       <header className={styles.container}>
         <Navbar />

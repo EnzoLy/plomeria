@@ -2,17 +2,15 @@ import styles from './styles.module.css'
 import Navbar from '../../components/navbar/navbar'
 import Footer from '../../components/footer/Footer'
 import { Location, ContactIcon, Email, WhatsApp } from '../../components/Icons/Icons'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import ContactContext from '../../contexts/ContactContext'
 
 export default function Contact () {
-  const ENUM = {
-    EMERGENCY: 'emergency',
-    CONTACT: 'contact',
-    LOCATION: 'location',
-    EMAIL: 'email'
-  }
+  const value = useContext(ContactContext)
 
-  const [show, setShow] = useState(ENUM.LOCATION)
+  const { contact } = value
+
+  const [show, setShow] = useState(contact)
 
   const handleClick = (e) => {
     const { id } = e.target
@@ -49,7 +47,7 @@ export default function Contact () {
         </div>
         <div className={styles.form_container}>
 
-          {show === ENUM.LOCATION && (
+          {show === 'location' && (
             <div className={styles.map_container}>
               <iframe
                 src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d294.79318777153384!2d-75.54192660498883!3d6.230927642645865!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44286db7fc1025%3A0x672a36da7748816!2sCl.%2045b%20%2313-60%2C%20Medell%C3%ADn%2C%20Buenos%20Aires%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1661160815580!5m2!1ses-419!2sco'
@@ -62,7 +60,7 @@ export default function Contact () {
             </div>
           )}
 
-          {show === ENUM.CONTACT && (
+          {show === 'contact' && (
             <div className={styles.whatsapp_container}>
               <div>
                 <h3>Envianos un mensaje</h3>
@@ -75,7 +73,7 @@ export default function Contact () {
             </div>
           )}
 
-          {show === ENUM.EMERGENCY && (
+          {show === 'emergency' && (
             <div className={styles.whatsapp_container}>
               <div>
                 <h3>Envianos un mensaje</h3>
@@ -88,7 +86,7 @@ export default function Contact () {
             </div>
           )}
 
-          {show === ENUM.EMAIL && (
+          {show === 'email' && (
             <div className={styles.email_container}>
               <div>
                 <h3>Envianos un Correo</h3>
