@@ -1,0 +1,37 @@
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 40px;
+	color: #222222;
+}
+
+.info {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 20px;
+}
+
+.contact div h2 {
+	margin: 0;
+	font-size: 1.6rem;
+}
+
+.info div {
+	display: flex;
+	flex-direction: column;
+}
+
+.map {
+	width: 300px;
+	height: 300px;
+}
+
+@media (min-width: 768px) {
+	.contact {
+		flex-direction: row;
+	}
+}

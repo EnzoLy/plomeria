@@ -1,0 +1,45 @@
+@font-face {
+	font-family: "SF UI Display";
+	src: url("../asset/SFUIDisplay/sf-ui-display-light-58646b33e0551.otf");
+	src: url("../asset/SFUIDisplay/sf-ui-display-medium-58646be638f96.otf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	scroll-behavior: smooth;
+	width: 100%;
+	height: 100%;
+	font-family: "SF UI Display", sans-serif;
+	color: #fefefe;
+	background-color: #fefefe;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #293296;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 3.75pt #323333;
+	background-color: #fefefe;
+}

@@ -1,0 +1,141 @@
+.articles {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.article {
+	padding: 10px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	color: #222222;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.article div {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+}
+.article div h2 {
+	font-size: 1.7rem;
+	font-weight: 600;
+	margin-top: 40px;
+	margin-bottom: 5px;
+}
+
+.article div span {
+	font-size: 1rem;
+	color: #4f4f4f;
+}
+
+.article2 {
+	padding: 10px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	color: #222222;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+	background: #f1f1f1;
+}
+
+.animation {
+	opacity: 1;
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+}
+
+.article2 div {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+}
+.article2 div h2 {
+	font-size: 1.7rem;
+	font-weight: 600;
+	margin-top: 40px;
+	margin-bottom: 5px;
+}
+
+.article2 div span {
+	font-size: 1rem;
+	color: #4f4f4f;
+}
+
+@media (min-width: 768px) {
+	.container {
+		background-size: 100% 100%;
+	}
+
+	.article {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		gap: 150px;
+	}
+	.article2 {
+		color: #222222;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		gap: 150px;
+		background: #f1f1f1;
+	}
+
+	.article div {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: start;
+		width: 50%;
+	}
+
+	.article2 div {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: start;
+		width: 50%;
+	}
+
+	.article div h2 {
+		font-size: 3rem;
+	}
+
+	.article div span {
+		font-size: 1.1rem;
+	}
+
+	.article2 div h2 {
+		font-size: 3rem;
+	}
+
+	.article2 div span {
+		font-size: 1.1rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.article div {
+		width: 20%;
+	}
+	.article2 div {
+		width: 20%;
+	}
+}

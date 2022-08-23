@@ -1,0 +1,308 @@
+.container {
+	padding: 50px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	color: #222222;
+	align-items: center;
+	min-height: 84vh;
+}
+
+.title_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+}
+
+.title_container h1 {
+	margin: 0;
+	font-size: 1.7rem;
+}
+
+.title_container h3 {
+	margin: 0;
+	font-size: 1.1rem;
+	font-weight: normal;
+}
+
+.icons {
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.icon {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	cursor: pointer;
+	transition: all 0.5s ease-in;
+	padding: 20px;
+	font-size: 0.95rem;
+	border-radius: 20px;
+}
+
+.icon svg {
+	transition: all 0.5s ease-in;
+	pointer-events: none;
+}
+
+.icon span {
+	pointer-events: none;
+}
+
+.red {
+	color: #ff0000;
+}
+
+.icon:hover {
+	background: #0e293c;
+	color: #fefefe;
+}
+
+.icon:hover svg {
+	fill: #fefefe;
+}
+
+.icon div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form_container {
+	background: #0e293c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	width: 280px;
+}
+
+.map_container {
+	width: 100%;
+	padding: 20px;
+}
+.map {
+	margin: auto;
+	width: 100%;
+	height: 500px;
+}
+
+.whatsapp_container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s ease-in;
+}
+.whatsapp_container h3 {
+	font-size: 1.6rem;
+	color: #fefefe;
+	margin: 0;
+}
+
+.whatsapp_container div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	padding: 20px;
+}
+
+.whatsapp_container div span {
+	color: #fefefe;
+	font-size: 1rem;
+}
+
+.whatsapp {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	border: 3px transparent solid;
+	transition: all 0.5s ease-in;
+	padding: 20px;
+	font-size: 0.95rem;
+	gap: 20px;
+}
+
+.whatsapp textarea {
+	width: 100%;
+	height: 150px;
+	padding: 10px 20px;
+	border-radius: 4px;
+	background-color: #ffffff;
+	color: #222222;
+	font-size: 1rem;
+	resize: none;
+	border: 0;
+	transition: all 0.5s ease-in;
+}
+
+.whatsapp textarea:focus {
+	border: 0;
+	outline: none;
+	background-color: #fefefe;
+}
+
+.whatsapp button {
+	border-radius: 54px;
+	background: #fefefe;
+	color: #222222;
+	font-size: 1rem;
+	width: 200px;
+	padding: 15px;
+	cursor: pointer;
+	text-transform: capitalize;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border: 0;
+	outline: 0;
+	font-weight: bold;
+}
+
+.email_container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.email_container div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	padding: 20px;
+}
+
+.email_container h3 {
+	font-size: 1.6rem;
+	color: #fefefe;
+	margin: 0;
+}
+
+.email_container div span {
+	color: #fefefe;
+	font-size: 1rem;
+}
+
+.email {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	padding: 20px;
+	font-size: 0.95rem;
+	gap: 20px;
+}
+
+.email input {
+	width: 100%;
+	height: 50px;
+	padding: 10px 20px;
+	font-size: 1rem;
+	border: 0;
+	border-radius: 4px;
+	text-transform: capitalize;
+	font-family: "SF UI Display", sans-serif;
+	font-weight: normal;
+}
+
+.email input:focus {
+	outline: none;
+	border: 0;
+}
+
+.email textarea {
+	width: 100%;
+	height: 150px;
+	padding: 10px 20px;
+	border-radius: 4px;
+	background-color: #ffffff;
+	color: #222222;
+	font-size: 1rem;
+	resize: none;
+	border: 0;
+	font-family: "SF UI Display", sans-serif;
+}
+
+.email textarea:focus {
+	border: 0;
+	outline: none;
+	background-color: #fefefe;
+}
+
+.email button {
+	border-radius: 54px;
+	background: #fefefe;
+	color: #222222;
+	font-size: 1rem;
+	width: 200px;
+	padding: 10px;
+	cursor: pointer;
+	text-transform: capitalize;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border: 0;
+	outline: 0;
+	font-weight: bold;
+}
+
+@media (min-width: 768px) {
+	.icons {
+		flex-direction: row;
+	}
+
+	.form_container {
+		width: 100%;
+	}
+
+	.whatsapp button {
+		width: 300px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.icons {
+		gap: 40px;
+	}
+
+	.form_container {
+		width: 100%;
+	}
+}
+@media (min-width: 1440px) {
+	.icons {
+		gap: 40px;
+	}
+
+	.form_container {
+		width: 50%;
+	}
+}
