@@ -11,8 +11,8 @@ export default function Contact () {
       <div className={styles.info}>
         <div>
           <h2>LLamanos a: </h2>
-          <a href='tel:320-548-19-92'>320 548 19 92</a>
-          <a href='tel:321-610-69-51'>321 610 69 51</a>
+          <a href='tel:3244777437'>Contacto: 32 44 77 74 37</a>
+          <a href='tel:3225821977'>Emergencias: 32 25 82 19 77</a>
         </div>
         <div>
           <h2>Visitanos en: </h2>
@@ -37,6 +37,7 @@ export default function Contact () {
         allowFullScreen=''
         loading='lazy'
         referrerPolicy='no-referrer-when-downgrade'
+        title='google_map'
       />
 
     </div>

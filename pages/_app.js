@@ -1,9 +1,9 @@
 import '../styles/globals.css'
-import Head from 'next/head'
 import ContactContext from '../contexts/ContactContext'
 import { useState } from 'react'
+import { AnimatePresence } from 'framer-motion'
 
-function MyApp ({ Component, pageProps }) {
+function MyApp ({ Component, pageProps, router }) {
   const [contact, setContact] = useState('location')
 
   return (
@@ -13,18 +13,9 @@ function MyApp ({ Component, pageProps }) {
         setContact
       }}
     >
-      <Head>
-        <title>Plomeria medellin 24h</title>
-        <meta name='og:title' content='Plomeria medellin 24h' key='title' />
-        <meta
-          property='og:description'
-          content='Plomeros en medellin las 24 horas disponibles | Plomero medellin | Plomeria en medellin | Plomeria medellin'
-        />
-        <meta name='name' content='Plomeria medellin 24h' />
-        <meta name='description' content='Plomeros en medellin las 24 horas disponibles | Plomero medellin | Plomeria en medellin | Plomeria medellin' />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-      <Component {...pageProps} />
+      <AnimatePresence initial mode='wait'>
+        <Component {...pageProps} key={router.asPath} />
+      </AnimatePresence>
     </ContactContext.Provider>
   )
 }

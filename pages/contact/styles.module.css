@@ -1,5 +1,5 @@
 .container {
-	padding: 50px;
+	padding-top: 150px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -22,34 +22,35 @@
 	font-size: 1.7rem;
 }
 
-.title_container h3 {
+.title_container h2 {
 	margin: 0;
 	font-size: 1.1rem;
 	font-weight: normal;
 }
 
 .icons {
+	width: 100%;
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
+	gap: 5px;
 }
 
 .icon {
-	height: 100%;
+	height: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	gap: 10px;
 	cursor: pointer;
 	transition: all 0.5s ease-in;
 	padding: 20px;
 	font-size: 0.95rem;
 	border-radius: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.158);
+	flex: 1 1 50%;
+	gap: 10px;
 }
 
 .icon svg {
@@ -59,6 +60,9 @@
 
 .icon span {
 	pointer-events: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .red {
@@ -86,7 +90,8 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 20px;
-	width: 280px;
+	width: 90%;
+	margin-bottom: 20px;
 }
 
 .map_container {
@@ -278,6 +283,8 @@
 @media (min-width: 768px) {
 	.icons {
 		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 50%;
 	}
 
 	.form_container {

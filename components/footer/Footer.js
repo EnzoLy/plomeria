@@ -8,7 +8,7 @@ export default function Footer () {
           Todos los derechos reservados &copy; {new Date().getFullYear()} Plomeria Medellin 24h
         </span>
         <span>
-          Made by Contrum Services
+          Made by <a href='https://www.contrum.org' target='_blank' rel='noreferrer'>Contrum Services</a>
         </span>
       </div>
     </footer>

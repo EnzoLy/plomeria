@@ -12,12 +12,13 @@ export function AboutUs () {
   })
 
   return (
+
     <div className={styles.articles} id='aboutus'>
-      <article className={styles.article}>
-        <div>
-          <Image className={styles.img} src='/imgs/plomeria1.jpg' width='250px' height='250px' layout='responsive' style={{ borderRadius: '1.5rem' }} alt='servicios_img' />
-        </div>
-        <div>
+      <article
+        className={styles.article}
+      >
+        <Image src='/imgs/plomeria1.jpg' width='500px' height='500px' style={{ borderRadius: '24px' }} alt='negocios_img' />
+        <div className={styles.info}>
           <h2>SERVICIO 24 HORAS</h2>
           <span>Estamos atentos a cualquier eventualidad</span>
           <span>que pueda ocurrir para garantizar un servicio oportuno y efizaz, las 24 horas</span>
@@ -26,11 +27,11 @@ export function AboutUs () {
       {
           isMobile
             ? (
-              <article className={styles.article2}>
-                <div>
-                  <Image src='/imgs/plomeria1.jpg' width='300px' height='300px' layout='responsive' style={{ borderRadius: '1.5rem' }} alt='negocios_img' />
-                </div>
-                <div>
+              <article
+                className={styles.article2}
+              >
+                <Image src='/imgs/plomeros-clean-center.jpg' width='500px' height='500px' style={{ borderRadius: '24px' }} alt='negocios_img' />
+                <div className={styles.info}>
                   <h2>ATENDEMOS SU NEGOCIO</h2>
                   <span>Evite pérdidas en su negocio. Visitamos</span>
                   <span>y a tendemos el daño en su negocio con los estándares de seguridad requeridos.</span>
@@ -38,23 +39,23 @@ export function AboutUs () {
               </article>
               )
             : (
-              <article className={styles.article2}>
-                <div>
+              <article
+                className={styles.article2}
+              >
+                <div className={styles.info}>
                   <h2>ATENDEMOS SU NEGOCIO</h2>
                   <span>Evite pérdidas en su negocio. Visitamos</span>
                   <span>y a tendemos el daño en su negocio con los estándares de seguridad requeridos.</span>
                 </div>
-                <div>
-                  <Image src='/imgs/plomeria1.jpg' width='300px' height='300px' layout='responsive' style={{ borderRadius: '1.5rem' }} alt='negocios_img' />
-                </div>
+                <Image src='/imgs/plomeros-clean-center.jpg' width='500px' height='500px' style={{ borderRadius: '24px' }} alt='negocios_img' />
               </article>
               )
           }
-      <article className={styles.article}>
-        <div>
-          <Image src='/imgs/plomeria1.jpg' width='300px' height='300px' layout='responsive' style={{ borderRadius: '1.5rem' }} alt='atencion_img' />
-        </div>
-        <div>
+      <article
+        className={styles.article}
+      >
+        <Image src='/imgs/destapaciones-plomeria.jpg' width='500px' height='500px' style={{ borderRadius: '24px' }} alt='negocios_img' />
+        <div className={styles.info}>
           <h2>ATENCIÓN DOMICILIARIA</h2>
           <span>Realizamos atención profesional a emergencias</span>
           <span>o daños que se presenten en su casa. Reparamos sin romper para su comodidad.</span>

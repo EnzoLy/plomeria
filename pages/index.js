@@ -8,6 +8,8 @@ import Contact from '../components/home/contact/Contact'
 import { Services } from '../components/home/services/Services'
 import { useEffect, useState } from 'react'
 import { ContactIcon } from '../components/Icons/Icons'
+import Link from 'next/link'
+import Head from 'next/head'
 
 export default function Index () {
   const [isMobile, setIsMobile] = useState(false)
@@ -20,8 +22,23 @@ export default function Index () {
 
   return (
     <>
+
+      <Head>
+        <title>Plomeros Medellín | Servicio 24 horas para urgencias</title>
+        <meta name='og:title' content='Plomeros Medellín | Servicio 24 horas para urgencias' key='title' />
+        <meta
+          property='og:description'
+          content='Plomeros Medellín | Plomeros medellín 24 horas | Plomería en Medellín | Plomeros en Medellín urgencias'
+        />
+        <meta name='name' content='Plomeros Medellín | Servicio 24 horas para urgencias' />
+        <meta name='description' content='Plomeros Medellín | Plomeros medellín 24 horas | Plomería en Medellín | Plomeros en Medellín urgencias' />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+
       <div className={styles.whatsapp}>
-        <Image src='/imgs/whatsapp.png' width='70px' height='70px' alt='whatsapp_img' />
+        <Link href='/contact'>
+          <Image src='/imgs/whatsapp.webp' width='70' height='70' alt='whatsapp_img' />
+        </Link>
       </div>
 
       {isMobile && (
@@ -30,8 +47,9 @@ export default function Index () {
         </div>
       )}
 
+      <Navbar />
+
       <header className={styles.container}>
-        <Navbar />
         <Header />
       </header>
 
